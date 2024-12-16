@@ -1,0 +1,555 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>School 13 / Movio - Your Ultimate Destination for Movies & TV Shows</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Meta Description -->
+        <meta name="description" content="Movio / is your go-to platform for streaming movies and TV shows. Binge, enjoy, and repeat!">
+        
+        <!-- Author -->
+        <meta name="author" content="Arakel">
+        
+        <!-- Open Graph (For Social Media Sharing) -->
+        <meta property="og:title" content="Movio - Movies & TV Shows">
+        <meta property="og:description" content="Discover and stream your favorite movies and TV shows on Movio.">
+        <meta property="og:image" content="preview-image.jpg">
+        <meta property="og:url" content="https://arakel-programs.github.io/movio">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Movio - Your Entertainment Hub">
+        <meta name="twitter:description" content="Stream top movies and series seamlessly on Movio.">
+        <meta name="twitter:image" content="../img/favicon.png">
+
+		<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+		<!-- CSS here -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/animate.min.css">
+        <link rel="stylesheet" href="../css/magnific-popup.css">
+        <link rel="stylesheet" href="../css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="../css/owl.carousel.min.css">
+        <link rel="stylesheet" href="../css/flaticon.css">
+        <link rel="stylesheet" href="../css/odometer.css">
+        <link rel="stylesheet" href="../css/aos.css">
+        <link rel="stylesheet" href="../css/slick.css">
+        <link rel="stylesheet" href="../css/default.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    </head>
+    <body>
+
+        <!-- preloader -->
+        <div id="preloader">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <img src="../img/preloader.svg" alt="Movio">
+                </div>
+            </div>
+        </div>
+        <!-- preloader-end -->
+
+		<!-- Scroll-top -->
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <i class="fas fa-angle-up"></i>
+        </button>
+        <!-- Scroll-top-end-->
+
+        <!-- header-area -->
+        <header>
+            <div id="sticky-header" class="menu-area transparent-header">
+                <div class="container custom-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+                            <div class="menu-wrap">
+                                <nav class="menu-nav show">
+                                    <div class="logo">
+                                        <a href="../index.html">
+                                            <img src="../img/logo/logo.png" alt="Movio">
+                                        </a>
+                                    </div>
+                                    <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                        <ul class="navigation">
+                                            <li class=""><a href="../index.html">Home</a></li>
+                                            <li class=""><a href="../movie.html">Movie</a></li>
+                                            <li class="active"><a href="../tv-show.html">tv show</a></li>
+                                            <li class=""><a href="../anime.html">Anime</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-action d-none d-md-block">
+                                        <ul>
+                                            <li class="header-search"><a href="#" data-toggle="modal" data-target="#search-modal"><i class="fas fa-search"></i></a></li>
+                                            <li class="header-lang">
+                                                <form action="#">
+                                                    <div class="icon"><i class="flaticon-globe"></i></div>
+                                                    <select id="lang-dropdown">
+                                                        <option value="">En</option>
+                                                        <option value="">Ru</option>
+                                                        <option value="">AM</option>
+                                                    </select>
+                                                </form>
+                                            </li>
+                                            <!-- <li class="header-btn"><a href="#" class="btn">Sign In</a></li> -->
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+
+                            <!-- Mobile Menu  -->
+                            <div class="mobile-menu">
+                                <div class="close-btn"><i class="fas fa-times"></i></div>
+
+                                <nav class="menu-box">
+                                    <div class="nav-logo"><a href="index.html"><img src="../img/logo/logo.png" alt="Movio" title="Movio"></a>
+                                    </div>
+                                    <div class="menu-outer">
+                                        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                                    </div>
+                                    <div class="social-links">
+                                        <ul class="clearfix">
+                                            <li><a href="#"><span class="fab fa-telegram"></span></a></li>
+                                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="menu-backdrop"></div>
+                            <!-- End Mobile Menu -->
+
+                            <!-- Modal Search -->
+                            <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <form>
+                                            <input type="text" placeholder="Search here...">
+                                            <button><i class="fas fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Search-end -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-area-end -->
+
+        <!-- main-area -->
+        <main>
+
+            <!-- movie-details-area -->
+            <section class="movie-details-area" data-background="../img/bg/movie_details_bg.jpg">
+                <div class="container">
+                    <div class="row align-items-center position-relative">
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="movie-details-img">
+                                <img src="../img/poster/school-13.jpg" alt="School 13">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-8">
+                            <div class="movie-details-content">
+                                <h5>Full Episodes</h5>
+                                <h2>School <span>13</span></h2>
+                                <div class="banner-meta">
+                                    <ul>
+                                        <li class="quality">
+                                            <span>Pg 18</span>
+                                            <span>hd</span>
+                                        </li>
+                                        <li class="category">
+                                            <a href="#">Comedy,</a>
+                                            <a href="#">Animation</a>
+                                        </li>
+                                        <li class="release-time">
+                                            <span><i class="far fa-calendar-alt"></i> 2007 - 2011</span>
+                                            <span><i class="far fa-clone"></i> 8 Episodes</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p>The life of a modern teenager is filled with bright and unpredictable events.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- movie-details-area-end -->
+
+            <!-- episode-area -->
+            <section class="episode-area episode-bg" data-background="../img/bg/episode_bg.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="movie-episode-wrap">
+                                <div class="episode-top-wrap">
+                                    <div class="section-title">
+                                        <span class="sub-title">ONLINE STREAMING</span>
+                                        <h2 class="title">Watch Full Episode</h2>
+                                    </div>
+                                    <div class="total-views-count">
+                                        <p><span class="counter" id="visitor-counter">0</span> <i class="far fa-eye"></i></p>
+                                    </div>
+                                </div>
+                                <div class="episode-watch-wrap">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="card">
+                                            <div class="card-header" id="headingTwo">
+                                                <button class="btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <span class="season">Season 1</span>
+                                                    <span class="video-count">8 Full Episodes</span>
+                                                </button>
+                                            </div>
+                                            <div id="collapseTwo" class="" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="../videos/tv-shows/content/school_13/school_13-episode-1.html" class="popup-video">
+                                                                <i class="fas fa-play"></i> Episode 1 - Halloween Special
+                                                            </a> 
+                                                            <span class="duration">
+                                                                <i class="far fa-clock"></i> 3 Min
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../videos/tv-shows/content/school_13/school_13-episode-2.html" class="popup-video">
+                                                                <i class="fas fa-play"></i> Episode 2 -  Street Magic
+                                                            </a> 
+                                                            <span class="duration">
+                                                                <i class="far fa-clock"></i> 3 Min
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../videos/tv-shows/content/school_13/school_13-episode-3.html" class="popup-video">
+                                                                <i class="fas fa-play"></i> Episode 3 - It All Can Wait
+                                                            </a> 
+                                                            <span class="duration">
+                                                                <i class="far fa-clock"></i> 4 Min
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../videos/tv-shows/content/school_13/school_13-episode-4.html" class="popup-video">
+                                                                <i class="fas fa-play"></i> Episode 4 - I Hate Christmas
+                                                            </a> 
+                                                            <span class="duration">
+                                                                <i class="far fa-clock"></i> 4 Min
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../videos/tv-shows/content/school_13/school_13-episode-5.html" class="popup-video">
+                                                                <i class="fas fa-play"></i> Episode 5 - I Want It! Syndrome
+                                                            </a> 
+                                                            <span class="duration">
+                                                                <i class="far fa-clock"></i> 9 Min
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../videos/tv-shows/content/school_13/school_13-episode-6.html" class="popup-video">
+                                                                <i class="fas fa-play"></i> Episode 6 - Basic Instinct of Survival
+                                                            </a> 
+                                                            <span class="duration">
+                                                                <i class="far fa-clock"></i> 9 Min
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../videos/tv-shows/content/school_13/school_13-episode-7.html" class="popup-video">
+                                                                <i class="fas fa-play"></i> Episode 7 - The Story of Two Hitchhikers
+                                                            </a> 
+                                                            <span class="duration">
+                                                                <i class="far fa-clock"></i> 11 Min
+                                                            </span>
+                                                            </li>
+                                                        <li>
+                                                            <a href="../videos/tv-shows/content/school_13/school_13-episode-8.html" class="popup-video">
+                                                                <i class="fas fa-play"></i> Episode 8 - TongueTied + Bonus
+                                                            </a> 
+                                                            <span class="duration">
+                                                                <i class="far fa-clock"></i> 2 Min
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="episode-img">
+                                <img src="../img/images/episode_school-13.jpg" alt="School 13">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="movie-history-wrap">
+                                <h3 class="title">About <span>School 13</span></h3>
+                                <p>The life of a modern teenager is filled with bright and unpredictable events. 
+                                    The humorous series "School-13" by Dmitry Menshikov, which has become a hit on the Runet, 
+                                    reflects all the joys and experiences of modern teenagers. 
+                                    The main character is a young and eccentric guy named Dima, 
+                                    who faces various non-standard situations every day and gets out of them with humor and brilliance. 
+                                    Many schoolchildren recognize themselves in the everyday life of this teenager, 
+                                    for example, in the desire to pass another level of the game instead of preparing for tomorrow's test.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- episode-area-end -->
+
+            <!-- tv-series-area -->
+            <section class="tv-series-area tv-series-bg" data-background="../img/bg/tv_series_bg02.jpg">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="section-title text-center mb-50">
+                                <span class="sub-title">Similar TV Shows</span>
+                                <h2 class="title">Watching Together</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="movie-item mb-50">
+                                <div class="movie-poster">
+                                    <a href="school-13-igroorgii.html"><img src="../img/poster/school-13-igroorgii.jpg" alt="School 13 Igroorgii"></a>
+                                </div>
+                                <div class="movie-content">
+                                    <div class="top">
+                                        <h5 class="title"><a href="school-13-igroorgii.html">School 13 Igroorgii</a></h5>
+                                        <span class="date">2012-2016</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <ul>
+                                            <li><span class="quality">hd</span></li>
+                                            <li>
+                                                <span class="duration"><i class="far fa-clone"></i> 45 Episodes</span>
+                                                <span class="rating"><i class="fas fa-thumbs-up"></i> 5.0</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="movie-item mb-50">
+                                <div class="movie-poster">
+                                    <a href="movie-details.html"><img src="../img/poster/ucm_poster10.jpg" alt=""></a>
+                                </div>
+                                <div class="movie-content">
+                                    <div class="top">
+                                        <h5 class="title"><a href="movie-details.html">The Perfect Match</a></h5>
+                                        <span class="date">2021</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <ul>
+                                            <li><span class="quality">4k</span></li>
+                                            <li>
+                                                <span class="duration"><i class="far fa-clock"></i> 128 min</span>
+                                                <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="movie-item mb-50">
+                                <div class="movie-poster">
+                                    <a href="movie-details.html"><img src="../img/poster/ucm_poster03.jpg" alt=""></a>
+                                </div>
+                                <div class="movie-content">
+                                    <div class="top">
+                                        <h5 class="title"><a href="movie-details.html">The Dog Woof</a></h5>
+                                        <span class="date">2021</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <ul>
+                                            <li><span class="quality">hd</span></li>
+                                            <li>
+                                                <span class="duration"><i class="far fa-clock"></i> 128 min</span>
+                                                <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="movie-item mb-50">
+                                <div class="movie-poster">
+                                    <a href="movie-details.html"><img src="../img/poster/ucm_poster04.jpg" alt=""></a>
+                                </div>
+                                <div class="movie-content">
+                                    <div class="top">
+                                        <h5 class="title"><a href="movie-details.html">The Easy Reach</a></h5>
+                                        <span class="date">2021</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <ul>
+                                            <li><span class="quality">hd</span></li>
+                                            <li>
+                                                <span class="duration"><i class="far fa-clock"></i> 128 min</span>
+                                                <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            <!-- tv-series-area-end -->
+
+            <!-- newsletter-area -->
+            <section class="newsletter-area newsletter-bg" data-background="../img/bg/newsletter_bg.jpg">
+                <div class="container">
+                    <div class="newsletter-inner-wrap">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="newsletter-content">
+                                    <h4>Trial Start First 30 Days.</h4>
+                                    <p>Enter your email to create or restart your membership.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <form action="#" class="newsletter-form">
+                                    <input type="email" required placeholder="Enter your email">
+                                    <button class="btn">get started</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- newsletter-area-end -->
+
+        </main>
+        <!-- main-area-end -->
+
+        <!-- footer-area -->
+        <footer>
+            <div class="footer-top-wrap">
+                <div class="container">
+                    <div class="footer-menu-wrap">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3">
+                                <div class="footer-logo">
+                                    <a href="../index.html"><img src="../img/logo/logo.png" alt="Movio"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="footer-menu">
+                                    <nav>
+                                        <ul class="navigation">
+                                            <li><a href="../index.html">Home</a></li>
+                                            <li><a href="../movie.html">Movie</a></li>
+                                            <li><a href="../tv-show.html">tv show</a></li>
+                                            <li><a href="../anime.html">Anime</a></li>
+                                        </ul>
+                                        <div class="footer-search">
+                                            <form action="#">
+                                                <input type="text" placeholder="Find Favorite Movie">
+                                                <button><i class="fas fa-search"></i></button>
+                                            </form>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-quick-link-wrap">
+                        <div class="row align-items-center">
+                            <div class="col-md-7">
+                                <div class="quick-link-list">
+                                    <ul>
+                                        <li><a href="mailto:info.movio.ask@gmail.com">Help Center</a></li>
+                                        <!-- <li><a href="#">Terms of Use</a></li>
+                                        <li><a href="#">Privacy</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="copyright-text">
+                                <p>Copyright &copy; <script>new Date().getFullYear()>document.write(new Date().getFullYear());</script>. All Rights Reserved By <a href="../index.html">Movio</a> | Created by <a href="https://arakel-programs.github.io/">Arakel</a>.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="payment-method-img text-center text-md-right">
+                                <a href="https://buymeacoffee.com/movio" target="_blank">
+                                    <img src="../img/images/card.png" alt="buymeacoffee">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area-end -->
+
+		<!-- JS here -->
+        <script src="../js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/isotope.pkgd.min.js"></script>
+        <script src="../js/imagesloaded.pkgd.min.js"></script>
+        <script src="../js/jquery.magnific-popup.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/jquery.odometer.min.js"></script>
+        <script src="../js/jquery.appear.js"></script>
+        <script src="../js/slick.min.js"></script>
+        <script src="../js/ajax-form.js"></script>
+        <script src="../js/wow.min.js"></script>
+        <script src="../js/aos.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+        <script>
+            // Function to update the visitor counter
+            function updateCounter() {
+                // Get the current visit count from local storage or initialize to 0
+                let visitCount = localStorage.getItem('visitCount') || 0;
+    
+                // Increment the count
+                visitCount++;
+    
+                // Update local storage
+                localStorage.setItem('visitCount', visitCount);
+    
+                // Update the counter on the page
+                document.getElementById('visitor-counter').textContent = visitCount;
+            }
+    
+            // Call the function to update and display the counter
+            updateCounter();
+        </script>
+    </body>
+</html>

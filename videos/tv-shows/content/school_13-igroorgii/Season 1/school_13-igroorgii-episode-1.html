@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+        <style>
+             body {
+                overflow: hidden;
+            }
+        </style>
+      </head>
+      
+      <body>
+        <video controls crossorigin playsinline poster="../../../../img/video-banner/school_13-episode-1.png">
+            <source src="../../../../videos/tv-shows/file/school_13/school_13-episode-1-480p.mp4" type="video/mp4" size="480">
+            <source src="../../../../videos/tv-shows/file/school_13/school_13-episode-1-720p.mp4" type="video/mp4" size="720">
+            <source src="../../../../videos/tv-shows/file/school_13/school_13-episode-1-1080p.mp4" type="video/mp4" size="1080">
+            <!-- Caption files -->
+            <!-- <track kind="captions" label="Russian" srclang="ru" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default>
+            <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt">
+            <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt"> -->
+       </video>
+      
+        <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+        <script>
+            // Change the second argument to your options:
+            // https://github.com/sampotts/plyr/#options
+            const player = new Plyr('video', {captions: {active: true}});
+
+            // Expose player so it can be used from the console
+            window.player = player;
+        </script>
+      </body>
+</html>
